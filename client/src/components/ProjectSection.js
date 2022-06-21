@@ -12,7 +12,7 @@ const ProjectSection = () => {
             <h1 className="font-weight-light text-center">
                 My <span className="text-info">Projects</span>
             </h1>
-            <div className="lead text-center">I buid projects just like this website</div>
+            <div className="lead text-center">I build projects just like this website</div>
             <div className="row my-5 pt-3 container">
                 {
                     projects.slice(0, 3).map((project) => {

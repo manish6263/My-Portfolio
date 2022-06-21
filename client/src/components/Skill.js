@@ -18,7 +18,7 @@ const Skill = ({ skill }) => {
     }
 
     return (
-        <div>
+        <div className='col-6 col-sm-3 p-3'>
             <img
                 src={skill.imageUrl}
                 alt={skill.name}

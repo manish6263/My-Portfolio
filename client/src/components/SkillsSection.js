@@ -9,16 +9,16 @@ const SkillsSection = () => {
 
     const finalSkillRow = [];
 
-    for (let i = 0; i < skills.length / 4; i++) {
-        let skillRow = skills.slice(i * 4, (i + 1) * 4);
+    // for (let i = 0; i < skills.length; i++) {
+        // let skillRow = skills.slice(i * 4, (i + 1) * 4);
         finalSkillRow.push(
-            <div key={uuid()} className="d-flex justify-content-around py-3">
-                {skillRow.map((skill) => (
+            // <div key={uuid()} className="col-sm-6 col-md-6">
+                skills.map((skill) => (
                     <Skill key={uuid()} skill={skill} />
-                ))}
-            </div>
+                ))
+            // </div>
         );
-    }
+    // }
 
     return (
         <div className="bg-light w-100">
@@ -29,7 +29,9 @@ const SkillsSection = () => {
                 <div className="lead pb-5">
                     I design, develop and deliver with this weapons
                 </div>
+                <div className="row">
                 {finalSkillRow}
+                </div>
             </div>
         </div>
     )
