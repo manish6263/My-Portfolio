@@ -41,7 +41,7 @@ router.post(
 
 
 router.get(
-    '/get-all-recommendations',
+    '/all-recommendations',
     async (req, res) => {
         try {
             const recommendations = await Recommendation.find();

@@ -17,7 +17,7 @@ const UserState = (props) => {
   const getProjects = async () => {
 
     let response = await fetch(
-      '/project/get-all-projects',
+      '/project/all-projects',
       {
         method: 'get'
       }
@@ -39,7 +39,7 @@ const UserState = (props) => {
   const getBlogs = async () => {
 
     let response = await fetch(
-      '/blog/get-all-blogs',
+      '/blog/all-blogs',
       {
         method: 'get'
       }
@@ -60,7 +60,7 @@ const UserState = (props) => {
   //get all the recommendations from the database..........
   const getRecommendations = async () => {
     let response = await fetch(
-      '/recommendation/get-all-recommendations',
+      '/recommendation/all-recommendations',
       {
         method: 'get'
       }
@@ -82,7 +82,7 @@ const UserState = (props) => {
   //get all the skills from the database.......
   const getSkills = async () => {
     let response = await fetch(
-      '/skill/get-all-skills',
+      '/skill/all-skills',
       {
         method: 'get'
       }

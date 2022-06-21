@@ -31,7 +31,7 @@ router.post(
 
 
 router.get(
-    '/get-all-blogs',
+    '/all-blogs',
     async (req, res) => {
         try {
             const blogs = await Blog.find();

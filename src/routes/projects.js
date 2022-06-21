@@ -31,7 +31,7 @@ router.post(
 
 
 router.get(
-    '/get-all-projects',
+    '/all-projects',
     async (req, res) => {
         try {
             const projects = await Project.find();

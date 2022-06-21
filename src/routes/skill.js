@@ -38,7 +38,7 @@ router.post(
 );
 
 router.get(
-    '/get-all-skills',
+    '/all-skills',
     async (req, res) => {
         try {
             const skills = await Skill.find();
