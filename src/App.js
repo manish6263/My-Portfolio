@@ -23,6 +23,7 @@ app.use('/recommendation', require('./routes/recommendation'));
 app.use('/skill', require('./routes/skill'));
 app.use('/project', require('./routes/projects'));
 app.use('/blog', require('./routes/blogs'));
+app.use('/about', require('./routes/about'));
 
 //for heroku deployment.......
 if (process.env.NODE_ENV === 'production') {

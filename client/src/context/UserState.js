@@ -23,7 +23,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
 
     if (response.isSuccessfull === true) {
       const projectArray = [];
@@ -45,7 +45,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
 
     if (response.isSuccessfull === true) {
       const blogArray = [];
@@ -66,7 +66,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
     if (response.isSuccessfull === true) {
       const recommendationArray = [];
       response.recommendations.forEach((recommendation) => {
@@ -74,7 +74,7 @@ const UserState = (props) => {
           recommendationArray.push(recommendation);
         }
       });
-      console.log(recommendationArray);
+      // console.log(recommendationArray);
       setRecommendations(recommendationArray);
     }
   }
@@ -88,7 +88,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
     if (response.isSuccessfull === true) {
       const skillArray = [];
       for (let i = 0; i < response.skills.length; i++) {
@@ -99,7 +99,7 @@ const UserState = (props) => {
   }
 
   useEffect(() => {
-    console.log('Inside use effect');
+    // console.log('Inside use effect');
     getProjects();
     getBlogs();
     getRecommendations();
