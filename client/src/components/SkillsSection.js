@@ -22,7 +22,7 @@ const SkillsSection = () => {
 
     return (
         <div className="bg-light w-100">
-            <div className="container text-center py-5">
+            <div className="container text-center py-5" style={{maxWidth: '900px'}}>
                 <h1 className="font-weight-light">
                     <span className="text-info">Technology</span> stack
                 </h1>

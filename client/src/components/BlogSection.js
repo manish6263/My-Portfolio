@@ -8,7 +8,7 @@ const BlogSection = () => {
     const { blogs } = useContext(userContext);
 
     return (
-        <div className="container my-5">
+        <div className="container my-5" style={{maxWidth: '1000px', margin: 'auto'}}>
             <h1 className="font-weight-light text-center">
                 My <span className="text-info">Blogs</span>
             </h1>
